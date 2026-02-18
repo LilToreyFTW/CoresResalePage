@@ -60,3 +60,12 @@ npm run dev
 npm run build
 npm start
 ```
+
+## Deploy to Vercel
+
+1. Go to [vercel.com](https://vercel.com) and sign in with GitHub.
+2. Click **Add New** → **Project** and import **LilToreyFTW/CoresResalePage**.
+3. Leave default settings (Framework: Next.js, Build Command: `npm run build`).
+4. Click **Deploy**. Your site will be live at `https://coresresalepage.vercel.app` (or a custom URL).
+
+After the first deploy, update the canonical URL and Open Graph URLs in `index.html` and `pages/index.tsx` to your actual Vercel URL.

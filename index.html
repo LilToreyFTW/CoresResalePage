@@ -19,20 +19,25 @@
     <meta name="twitter:title" content="ARC Raiders Cheats | Undetected Game Cheats">
     <meta name="twitter:description" content="ARC Raiders Cheats - Premium undetected cheats for Arc Raiders, Apex, COD, Fortnite. Buy now.">
     <!-- Invisible SEO: keyword-rich content for crawlers (visually hidden, accessible) -->
-    <meta name="theme-color" content="#667eea">
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Orbitron', sans-serif;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #000000;
             color: #fff;
             min-height: 100vh;
             padding: 20px;
+            font-weight: 700;
         }
 
         .container {
@@ -50,11 +55,13 @@
             font-size: 3rem;
             margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-weight: 900;
         }
 
         .subtitle {
             font-size: 1.2rem;
             opacity: 0.9;
+            font-weight: 700;
         }
 
         .pricing-section {
@@ -65,6 +72,7 @@
             text-align: center;
             font-size: 2rem;
             margin-bottom: 30px;
+            font-weight: 900;
         }
 
         .pricing-grid {
@@ -101,13 +109,13 @@
 
         .pricing-duration {
             font-size: 1.5rem;
-            font-weight: bold;
+            font-weight: 800;
             margin-bottom: 15px;
         }
 
         .pricing-price {
             font-size: 2.5rem;
-            font-weight: bold;
+            font-weight: 900;
             margin-bottom: 10px;
         }
 
@@ -124,7 +132,7 @@
 
         .sale-price {
             color: #ffd700;
-            font-weight: bold;
+            font-weight: 900;
         }
 
         .badge {
@@ -134,7 +142,7 @@
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 0.85rem;
-            font-weight: bold;
+            font-weight: 800;
             margin-bottom: 15px;
         }
 
@@ -152,7 +160,7 @@
         .features li:before {
             content: "✓ ";
             color: #4ade80;
-            font-weight: bold;
+            font-weight: 800;
             margin-right: 8px;
         }
 
@@ -166,8 +174,8 @@
 
         .countdown-timer {
             font-size: 3rem;
-            font-weight: bold;
-            font-family: 'Courier New', monospace;
+            font-weight: 900;
+            font-family: 'Orbitron', monospace;
             color: #ffd700;
             margin: 20px 0;
         }
@@ -192,6 +200,108 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 25px;
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px 0 30px;
+        }
+
+        .tab-button {
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            cursor: pointer;
+            font-weight: 800;
+            font-family: 'Orbitron', sans-serif;
+            transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+        }
+
+        .tab-button:hover {
+            transform: translateY(-1px);
+            border-color: rgba(255, 255, 255, 0.45);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .tab-button.active {
+            border-color: #ffd700;
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.15);
+        }
+
+        .tab-panel {
+            display: none;
+            margin: 10px 0 30px;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        .tab-description {
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px solid rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 18px;
+            line-height: 1.6;
+        }
+
+        .faq {
+            margin-top: 16px;
+        }
+
+        .faq-title {
+            text-align: center;
+            font-size: 1.6rem;
+            margin: 10px 0 14px;
+            font-weight: 900;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px solid rgba(255, 255, 255, 0.18);
+            border-radius: 14px;
+            padding: 6px 10px;
+            margin-top: 10px;
+        }
+
+        .faq-question {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 8px;
+            font-weight: 900;
+        }
+
+        .faq-question::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-qmark {
+            display: inline-grid;
+            place-items: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 999px;
+            background: rgba(255, 215, 0, 0.14);
+            border: 2px solid rgba(255, 215, 0, 0.55);
+            color: #ffd700;
+            font-weight: 900;
+            flex: 0 0 auto;
+        }
+
+        .faq-answer {
+            padding: 0 8px 14px 46px;
+            opacity: 0.92;
+            line-height: 1.7;
+            font-weight: 700;
         }
 
         .product-card {
@@ -219,7 +329,7 @@
 
         .product-name {
             font-size: 1.5rem;
-            font-weight: bold;
+            font-weight: 800;
             margin-bottom: 10px;
         }
 
@@ -230,13 +340,13 @@
             padding: 4px 12px;
             border-radius: 15px;
             font-size: 0.75rem;
-            font-weight: bold;
+            font-weight: 800;
             margin-bottom: 15px;
         }
 
         .product-price {
             font-size: 1.8rem;
-            font-weight: bold;
+            font-weight: 900;
             margin: 15px 0;
             color: #ffd700;
         }
@@ -249,7 +359,8 @@
             border-radius: 10px;
             color: #fff;
             font-size: 1.1rem;
-            font-weight: bold;
+            font-weight: 800;
+            font-family: 'Orbitron', sans-serif;
             cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
             margin-top: 15px;
@@ -272,7 +383,8 @@
             border-radius: 10px;
             color: #fff;
             font-size: 1rem;
-            font-weight: 500;
+            font-weight: 700;
+            font-family: 'Orbitron', sans-serif;
             cursor: pointer;
             margin: 15px 0;
             transition: all 0.3s ease;
@@ -305,7 +417,7 @@
             opacity: 0.9;
             margin-bottom: 8px;
             display: block;
-            font-weight: 500;
+            font-weight: 700;
         }
 
         /* Invisible SEO: off-screen text for crawlers (not displayed, but indexed) */
@@ -391,6 +503,8 @@
 
         <div class="products-section">
             <h1 class="products-title">ARC RAIDERS CHEATS</h1>
+            <div class="tabs" id="tabs"></div>
+            <div id="tab-panels"></div>
             <div class="products-grid" id="products-grid">
                 <!-- Products will be populated here -->
             </div>
@@ -460,15 +574,111 @@
 
         // Products data (image URLs from Nintendo, Steam, Ubisoft, etc.)
         const products = [
-            { name: 'Apex Legends', undetected: true, image: 'https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/apexlegends/16x9_ApexLegends_image1600w.jpg' },
-            { name: 'Call of Duty', undetected: true, image: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1938090/06107605348820087bb51ca89ed620c22fe559aa/header.jpg?t=1770663933' },
-            { name: 'HWID Spoofer', undetected: true, image: 'https://chamscheats.com/uploads/monthly_2025_09/Spoofer_HWID.webp.55d666d4bdf7032ce2037f7711a655d5.webp' },
-            { name: 'Arc Raiders', undetected: true, image: 'https://gameinformer.com/sites/default/files/styles/content_header_l/public/2025/11/11/1147728f/arc%2520raiders%2520review%2520game%2520informer.jpg.webp' },
-            { name: 'Siege X', undetected: true, image: 'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4IZecJyhvcIUxxu0Rd1vjX/99fe1a724d46a4d9ca70c76c7a78496f/r6s-homepage-meta__1_.jpg' },
-            { name: 'Tarkov', undetected: true, image: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3932890/e1367f10d469137a2ced522b642a9b1ee10450da/header.jpg?t=1770112829' },
-            { name: 'Rust', undetected: true, image: 'https://steamcdn-a.akamaihd.net/steam/apps/252490/header.jpg' },
-            { name: 'Fortnite', undetected: true, image: 'https://i.ytimg.com/vi/adGdyCdvKz4/maxresdefault.jpg' }
+            { name: 'Apex Legends', undetected: true, image: 'https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/apexlegends/16x9_ApexLegends_image1600w.jpg', slug: 'apex-legends', description: 'Add a description for Apex Legends here. Include what’s included, requirements, and support details.' },
+            { name: 'Call of Duty', undetected: true, image: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1938090/06107605348820087bb51ca89ed620c22fe559aa/header.jpg?t=1770663933', slug: 'call-of-duty', description: 'Add a description for Call of Duty here. Include what’s included, requirements, and support details.' },
+            { name: 'HWID Spoofer', undetected: true, image: 'https://chamscheats.com/uploads/monthly_2025_09/Spoofer_HWID.webp.55d666d4bdf7032ce2037f7711a655d5.webp', slug: 'hwid-spoofer', description: 'Add a description for HWID Spoofer here. Include what’s included, requirements, and support details.' },
+            { name: 'Arc Raiders', undetected: true, image: 'https://gameinformer.com/sites/default/files/styles/content_header_l/public/2025/11/11/1147728f/arc%2520raiders%2520review%2520game%2520informer.jpg.webp', slug: 'arc-raiders', description: 'Add a description for Arc Raiders here. Include what’s included, requirements, and support details.' },
+            { name: 'Siege X', undetected: true, image: 'https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4IZecJyhvcIUxxu0Rd1vjX/99fe1a724d46a4d9ca70c76c7a78496f/r6s-homepage-meta__1_.jpg', slug: 'siege-x', description: 'Add a description for Siege X here. Include what’s included, requirements, and support details.' },
+            { name: 'Tarkov', undetected: true, image: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3932890/e1367f10d469137a2ced522b642a9b1ee10450da/header.jpg?t=1770112829', slug: 'tarkov', description: 'Add a description for Tarkov here. Include what’s included, requirements, and support details.' },
+            { name: 'Rust', undetected: true, image: 'https://steamcdn-a.akamaihd.net/steam/apps/252490/header.jpg', slug: 'rust', description: 'Add a description for Rust here. Include what’s included, requirements, and support details.' },
+            { name: 'Fortnite', undetected: true, image: 'https://i.ytimg.com/vi/adGdyCdvKz4/maxresdefault.jpg', slug: 'fortnite', description: 'Add a description for Fortnite here. Include what’s included, requirements, and support details.' }
         ];
+
+        // Tabs (each cheat/product gets its own tab "page")
+        const tabsRoot = document.getElementById('tabs');
+        const panelsRoot = document.getElementById('tab-panels');
+
+        // Shared FAQ shown on every cheat tab
+        // (Keep this generic so it applies to all products)
+        const FAQS = [
+            {
+                q: 'How difficult is the installation process?',
+                a: 'Installation is designed to be straightforward with a step-by-step guide. Most users complete setup within 5–10 minutes. If you need help, contact support for assisted setup.'
+            },
+            {
+                q: 'When will I receive my product key?',
+                a: 'Your license key is delivered automatically to your registered email address after payment confirmation (usually within 30 seconds). If you don’t see it, check spam/junk and then contact support.'
+            },
+            {
+                q: 'What support options are available?',
+                a: 'Support is available 24/7 via Discord and email for technical questions and setup help. We also provide a knowledge base with troubleshooting steps and common fixes.'
+            },
+            {
+                q: 'Is this product safe to use?',
+                a: 'Use at your own risk. Any third‑party software can carry risk depending on your environment and how it is used. We recommend following the official guide and contacting support if anything looks unexpected.'
+            },
+            {
+                q: 'What features are included in the product?',
+                a: 'Features vary by product and are listed on the product page. If you need confirmation of a specific feature, contact support before purchasing.'
+            },
+            {
+                q: 'How do updates work?',
+                a: 'Updates are delivered through the loader/app when available. If a patch occurs, we publish updates as soon as possible. Active subscriptions receive updates during their subscription period.'
+            },
+            {
+                q: 'Can I use this on multiple PCs?',
+                a: 'Licenses are typically bound to one device at a time. If you need to switch devices, use the dashboard reset option (if available) or contact support for assistance.'
+            }
+        ];
+
+        function renderFaqHtml() {
+            return `
+                <div class="faq">
+                    <div class="faq-title">Questions & Answers</div>
+                    ${FAQS.map(item => `
+                        <details class="faq-item">
+                            <summary class="faq-question">
+                                <span class="faq-qmark">?</span>
+                                <span>${item.q}</span>
+                            </summary>
+                            <div class="faq-answer">${item.a}</div>
+                        </details>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        function setActiveTab(slug) {
+            document.querySelectorAll('.tab-button').forEach((b) => b.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach((p) => p.classList.remove('active'));
+
+            const btn = document.querySelector(`[data-tab=\"${slug}\"]`);
+            const panel = document.getElementById(`panel-${slug}`);
+            if (btn) btn.classList.add('active');
+            if (panel) panel.classList.add('active');
+        }
+
+        function buildTabs() {
+            tabsRoot.innerHTML = '';
+            panelsRoot.innerHTML = '';
+
+            products.forEach((p) => {
+                const btn = document.createElement('button');
+                btn.className = 'tab-button';
+                btn.textContent = p.name;
+                btn.setAttribute('data-tab', p.slug);
+                btn.onclick = () => {
+                    history.replaceState(null, '', `#${p.slug}`);
+                    setActiveTab(p.slug);
+                };
+                tabsRoot.appendChild(btn);
+
+                const panel = document.createElement('div');
+                panel.className = 'tab-panel';
+                panel.id = `panel-${p.slug}`;
+                panel.innerHTML = `
+                    <div class="tab-description">
+                        <div style="font-size: 1.25rem; font-weight: 900; margin-bottom: 10px;">${p.name}</div>
+                        <div style="opacity: 0.95;">${p.description}</div>
+                    </div>
+                    ${renderFaqHtml()}
+                `;
+                panelsRoot.appendChild(panel);
+            });
+
+            const initial = (location.hash || '').replace('#', '') || products[0].slug;
+            setActiveTab(initial);
+        }
 
         // Calculate price based on duration
         function calculatePrice(productName, duration) {
@@ -493,6 +703,8 @@
             }
         }
 
+        buildTabs();
+
         // Render products
         const productsGrid = document.getElementById('products-grid');
         products.forEach((product, index) => {
@@ -515,6 +727,7 @@
                 </select>
                 <div class="product-price" id="price-${index}">$${basePrices[product.name]}</div>
                 <button class="buy-button" onclick="handleBuy('${product.name}', ${index})">Buy Now</button>
+                <button class="buy-button" style="margin-top:10px; background: rgba(255,255,255,0.10);" onclick="goToTab('${product.slug}')">View Description</button>
             `;
             productsGrid.appendChild(card);
             
@@ -536,6 +749,12 @@
             const price = calculatePrice(productName, selectedDuration);
             alert(`Redirecting to purchase: ${productName} - ${selectedDuration} ($${price})`);
             // Add your purchase logic here
+        }
+
+        function goToTab(slug) {
+            history.replaceState(null, '', `#${slug}`);
+            setActiveTab(slug);
+            document.getElementById('tabs').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     </script>
 </body>
