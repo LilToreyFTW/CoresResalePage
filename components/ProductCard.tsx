@@ -10,11 +10,19 @@ interface ProductCardProps {
   onBuy: (name: string, duration: string, price: number) => void
 }
 
-const pricingTiers = {
+type Duration = '1 Day' | '1 Week' | '1 Month' | 'Lifetime'
+
+type PricingTier = {
+  price: number
+  multiplier: number
+  originalPrice?: number
+}
+
+const pricingTiers: Record<Duration, PricingTier> = {
   '1 Day': { price: 20.99, multiplier: 1 },
-  '1 Week': { price: 45.00, multiplier: 1 },
+  '1 Week': { price: 45.0, multiplier: 1 },
   '1 Month': { price: 69.99, multiplier: 1 },
-  'Lifetime': { price: 99.99, originalPrice: 199.99, multiplier: 1 }
+  Lifetime: { price: 99.99, originalPrice: 199.99, multiplier: 1 }
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -24,21 +32,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
   undetected = false,
   onBuy
 }) => {
-  const [selectedDuration, setSelectedDuration] = useState<string>('1 Day')
+  const [selectedDuration, setSelectedDuration] = useState<Duration>('1 Day')
 
-  const calculatePrice = (duration: string): number => {
-    const tier = pricingTiers[duration as keyof typeof pricingTiers]
-    
-    // Use tier price directly for all durations
-    return tier.price
-  }
+  const calculatePrice = (duration: Duration): number => pricingTiers[duration].price
 
-  const handleDurationChange = (duration: string) => {
-    setSelectedDuration(duration)
-  }
+  const handleDurationChange = (duration: Duration) => setSelectedDuration(duration)
 
   const currentPrice = calculatePrice(selectedDuration)
-  const tier = pricingTiers[selectedDuration as keyof typeof pricingTiers]
+  const tier = pricingTiers[selectedDuration]
 
   return (
     <div className="product-card">
@@ -54,7 +55,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <select 
         className="duration-select" 
         value={selectedDuration}
-        onChange={(e) => handleDurationChange(e.target.value)}
+        onChange={(e) => handleDurationChange(e.target.value as Duration)}
       >
         <option value="1 Day">1 Day</option>
         <option value="1 Week">1 Week</option>
@@ -62,7 +63,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <option value="Lifetime">Lifetime</option>
       </select>
       <div className="product-price">
-        {selectedDuration === 'Lifetime' && tier.originalPrice ? (
+        {selectedDuration === 'Lifetime' && typeof tier.originalPrice === 'number' ? (
           <>
             <span className="original-price">${tier.originalPrice}</span>
             <span className="sale-price">${currentPrice.toFixed(2)}</span>
